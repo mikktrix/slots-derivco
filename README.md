@@ -1,4 +1,10 @@
-## Test app is hosted at: [Netlify](https://nervous-hodgkin-bbd213.netlify.app) to view it in the browser.
+## Test app is hosted at: [Netlify](https://nervous-hodgkin-bbd213.netlify.app)
+
+## Recommended screen width > 1030px
+## Recommended screen height > 630px < 800px
+
+## Current ver - 1.0
+## Next ver - 1.1 with added styling.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
