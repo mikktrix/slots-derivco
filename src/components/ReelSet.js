@@ -131,6 +131,7 @@ export default class ReelSet extends React.Component {
     
     // Turn off the previous highlight
     if(currentIdx > 0) {
+      // eslint-disable-next-line
       Constants.LINES[this.winningLines[currentIdx -1][0]].map((el)=> {
         this.reels[el[0]].highlightAtIndex(Math.floor(el[1] / 2), false)
       })
@@ -138,7 +139,7 @@ export default class ReelSet extends React.Component {
     }
 
     if (currentIdx > this.winningLines.length -1) return;
-    
+    // eslint-disable-next-line
     Constants.LINES[this.winningLines[currentIdx][0]].map((el)=> {
       this.reels[el[0]].highlightAtIndex(Math.floor(el[1] / 2), true)
     })
