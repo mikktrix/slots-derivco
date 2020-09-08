@@ -1,0 +1,69 @@
+@import "./variables.scss";
+
+.screen {
+  width: $DIMENSION_WIDTH * $app_size;
+  height: $DIMENSION_HEIGHT * $app_size;
+  background-color: $bg_color;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $border_color;
+}
+
+.reel {
+  background-color: $bg_color;
+  overflow: hidden;
+}
+
+.spin-button {
+  width: $DIMENSION_WIDTH * $app_size;
+  height: 50px;
+  text-align: center;
+  
+  h3 {
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-weight: 700;
+  }
+}
+
+.symbol {
+  width: $app_size;
+  height: $app_size;
+}
+
+.paytable {
+  border-style: solid;
+  border-width: 3px;
+  border-color: $border_color;
+  position: absolute;
+  left: calc(50vw - 100px);
+  top: 900px;
+
+  @media screen and (min-width: 1030px) {
+    left: calc(50vw - 330px - 200px);
+    top: 100px;
+  }
+}
+
+.pay-row {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.pay-column {
+  
+  text-align: center;
+}
+
+.pay-symbol {
+  width: $pay_symbol_size;
+  height: $pay_symbol_size;
+}
+
